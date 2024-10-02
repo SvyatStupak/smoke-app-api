@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api:
-    build: .
+    image: ss2paka/smoke-app-api:latest
     ports:
       - "9000:9000"
     environment:
@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
 
-  db:
+  postgres:
     image: postgres:16.2
     environment:
       POSTGRES_USER: user
