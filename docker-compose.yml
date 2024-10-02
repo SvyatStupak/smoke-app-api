@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api:
-    image: svyatstupak/api:latest
+    image: ss2paka/smoke-app-api:latest
     ports:
       - "9000:9000"
     environment:
