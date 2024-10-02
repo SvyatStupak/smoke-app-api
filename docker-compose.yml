@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api:
-    build: .
+    image: svyatstupak/api:latest
     ports:
       - "9000:9000"
     environment:
@@ -10,7 +10,6 @@ services:
       - .:/app
     depends_on:
       - db
-    command: yarn dev
 
   db:
     image: postgres:16.2
