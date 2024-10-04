@@ -42,11 +42,35 @@ const plugins = [
 	},
 	{
 		resolve: '@rigby-software-house/mercurjs-vendor',
-		options: {},
+		options: {
+			serve: true,
+			autoRebuild: true,
+			backend: "http://64.225.110.85:9000",
+			develop: {
+				open: true,
+				port: 7002,
+				host: "0.0.0.0",
+				logLevel: "error",
+				stats: "normal",
+				allowedHosts: "all",
+			},
+		},
 	},
 	{
 		resolve: '@medusajs/admin',
-		options: {},
+		options: {
+			serve: true,
+			autoRebuild: true,
+			backend: "http://64.225.110.85:9000",
+			develop: {
+				open: true,
+				port: 7001,
+				host: "0.0.0.0",
+				logLevel: "error",
+				stats: "normal",
+				allowedHosts: "all",
+			},
+		},
 	},
 ];
 

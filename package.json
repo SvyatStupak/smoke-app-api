@@ -23,9 +23,9 @@
 		"seed": "cross-env medusa seed -f ./data/seed.json",
 		"start": "cross-env npm run build && medusa start",
 		"start:custom": "cross-env npm run build && node --preserve-symlinks --trace-warnings index.js",
-	  	"dev": "cross-env HOST=64.225.110.85 PORT=7001 npm run build:server && medusa develop",
-	  	"dev:vendor": "cross-env HOST=64.225.110.85 PORT=7002 medusa-vendor develop",
-	  	"generate:migration": "npx typeorm migration:create",
+		"dev": "cross-env npm run build:server && medusa develop",
+		"dev:vendor": "cross-env medusa-vendor develop",
+		"generate:migration": "npx typeorm migration:create",
 		"lint": "./node_modules/.bin/eslint src/ --fix",
 		"postinstall": "patch-package"
 	},
