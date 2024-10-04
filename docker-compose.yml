@@ -1,7 +1,10 @@
 version: '3.8'
 services:
   api:
-    build: .
+    build:
+      context: .
+      args:
+        - MEDUSA_BACKEND_URL=http://64.225.110.85:9000
     ports:
       - "9000:9000"
       - "7001:7001"
