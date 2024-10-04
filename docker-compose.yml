@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - "9000:9000"
+      - "7001:7001"
+      - "7002:7002"
     environment:
       - DATABASE_URL=postgres://user:password@postgres:5432/mydatabase
     volumes:

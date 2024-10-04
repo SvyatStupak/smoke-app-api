@@ -10,5 +10,6 @@ COPY . .
 
 RUN yarn run build:admin && yarn run build:vendor
 
-EXPOSE 9000
+EXPOSE 9000 7001 7002
+
 CMD sh -c "yarn dev & yarn dev:vendor"
