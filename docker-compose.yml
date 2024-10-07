@@ -12,6 +12,7 @@ services:
     environment:
       - DATABASE_URL=postgres://user:password@postgres:5432/mydatabase
       - MEDUSA_BACKEND_URL=http://64.225.110.85:9000
+      - MEDUSA_ADMIN_BACKEND_URL=http://64.225.110.85:9000
     volumes:
       - .:/app
     depends_on:
