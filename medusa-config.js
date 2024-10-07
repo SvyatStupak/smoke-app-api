@@ -58,19 +58,19 @@ const plugins = [
 	},
 	{
 		resolve: '@medusajs/admin',
-		options: {
-			serve: true,
-			autoRebuild: true,
-			backend: "http://64.225.110.85:9000",
-			develop: {
-				open: true,
-				port: 7001,
-				host: "0.0.0.0",
-				logLevel: "error",
-				stats: "normal",
-				allowedHosts: "all",
-			},
-		},
+		// options: {
+		// 	serve: true,
+		// 	autoRebuild: true,
+		// 	backend: "http://64.225.110.85:9000",
+		// 	develop: {
+		// 		open: true,
+		// 		port: 7001,
+		// 		host: "0.0.0.0",
+		// 		logLevel: "error",
+		// 		stats: "normal",
+		// 		allowedHosts: "all",
+		// 	},
+		// },
 	},
 ];
 

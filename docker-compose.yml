@@ -9,7 +9,6 @@ services:
     ports:
       - "9000:9000"
       - "7001:7001"
-      - "7002:7002"
     environment:
       - DATABASE_URL=postgres://user:password@postgres:5432/mydatabase
       - MEDUSA_BACKEND_URL=http://64.225.110.85:9000
