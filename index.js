@@ -15,10 +15,9 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
       })
       const configModule = container.resolve("configModule")
       const port = process.env.PORT ?? configModule.projectConfig.port ?? 9000
-      const host = process.env.HOST || '0.0.0.0'
 
       const server = GracefulShutdownServer.create(
-        app.listen(port, host,(err) => {
+        app.listen(port,(err) => {
           if (err) {
             return
           }
