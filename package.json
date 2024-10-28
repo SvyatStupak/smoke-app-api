@@ -36,7 +36,7 @@
 		"@medusajs/event-bus-local": "latest",
 		"@medusajs/event-bus-redis": "latest",
 		"@medusajs/file-local": "latest",
-		"@medusajs/icons": "^1.2.1",
+		"@medusajs/icons": "^2.0.1",
 		"@medusajs/medusa": "^1.20.6",
 		"@medusajs/ui": "^3.0.0",
 		"@rigby-software-house/mercurjs-vendor": "^0.0.4",
